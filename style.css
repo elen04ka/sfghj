@@ -1,0 +1,440 @@
+/* === БАЗОВІ НАЛАШТУВАННЯ === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .rockets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rocket-card {
+  flex: 1 1 calc(33% - 20px);
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.rocket-card:hover {
+  transform: translateY(-5px);
+}
+
+.rocket-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #d3e300;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .rocket-card {
+    flex: 1 1 100%;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 350px;
+    
+}
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.rocket_heading{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.voice_heading{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a{
+    background-color: rgb(190, 207, 0);
+    margin: 10px 30px;
+    font-size: 13px;
+    color: white;
+     text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 15px; 
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right img{
+    width: 350px;     
+    border-radius: 30px; 
+}
+  
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    background: #fafafa;
+    color: #222;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #222;
+  }
+
+  .href{
+    border-radius: 30px;
+  }
+  
+  .line{
+    background-color: white;
+    height: 25px;
+    display: flex;
+  }
+
+  img {
+    
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* === ШАПКА === */
+  header {
+    background: #d3e300;
+    padding: 15px;
+  }
+  .center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+    height: 330px;
+ border-radius: 30px; 
+}
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #444;
+    text-decoration: underline;
+  }
+  
+  /* === ФУТЕР === */
+  footer {
+    background: #d3e300;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* === ГОЛОВНА (index) === */
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+  
+  .section-1 .left {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section-1 .right img {
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  }
+  
+  a {
+    margin-top: 20px;
+  }
+  
+   a {
+    background: #d3e300;
+    color: #000;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  a a:hover {
+    background: #b8c800;
+    color: #fff;
+  }
+  
+  /* === РАКЕТНІ КАРТКИ (index + gallery) === */
+  .rockets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .rocket-card {
+    flex: 1 1 calc(33% - 20px);
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .rocket-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .rocket-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* === ВІДЕО (index) === */
+  .videos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .videos iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+  
+  /* === СТОРІНКА INFO === */
+  .container {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+  }
+  
+  .container .left {
+    flex: 2;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 20px;
+  }
+  
+  .container .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .container .right img {
+    border-radius: 10px;
+    max-width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .container .right a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+    transition: 0.3s;
+  }
+  
+  .container .right a:hover {
+    color: #d3e300;
+  }
+  
+  /* === СТОРІНКА SHOP === */
+  .shop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .empty{
+    background-color: white;
+    height: 100px;
+    display: flex;
+}
+  
+  p{
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+  .product-card {
+    flex: 1 1 calc(25% - 20px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #d3e300;
+    margin: 10px 0;
+  }
+  
+  .product-card button {
+    background: #d3e300;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .product-card button:hover {
+    background: #b8c800;
+    color: #fff;
+  }
+
+  /* === АДАПТИВ === */
+  @media (max-width: 768px) {
+    .section-1 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .rocket-card {
+      flex: 1 1 100%;
+    }
+  
+    .product-card {
+      flex: 1 1 100%;
+    }
+  
+    .videos iframe {
+      width: 100%;
+      height: 220px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container .right img {
+      max-width: 100%;
+    }
+  
+  body {
+    font-family: sans-serif;
+}
+
+h1{
+  color: grey;
+  text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+h2{
+  color: red;
+  text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+img{
+  box-shadow: 15px 20px 10px rgba(0,0,0,0.8);
+}
+}
+
+
+.intresting:hover{
+  background-color: green;
+}
+.notintresting:hover{
+  background-color: red;
+}
